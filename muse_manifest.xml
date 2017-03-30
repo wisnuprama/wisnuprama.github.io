@@ -1,12 +1,12 @@
-<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="wisnuprama.github.io" resolutions="1x,2x" timestamp="1490884494856">
+<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="wisnuprama.github.io" resolutions="1x,2x" timestamp="1490885604452">
   <folder name="images">
     <file name="home-favicon.ico" crc="75230490" ref="index"/>
     <file name="blank.gif" crc="4208392903" ref="index"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="443350757"/>
-    <file name="index.css" crc="4099314775" ref="index"/>
-    <file name="nomq_index.css" crc="166971502" ref="index"/>
+    <file name="index.css" crc="4268947191" ref="index"/>
+    <file name="nomq_index.css" crc="3955585022" ref="index"/>
     <file name="iefonts_index.css" crc="3824530138" ref="index"/>
   </folder>
   <folder name="scripts">
@@ -18,5 +18,5 @@
     <file name="require.js" crc="4234670167" ref="index"/>
     <file name="jquery.museresponsive.js" crc="433634197" ref="index"/>
   </folder>
-  <file name="index.html" crc="4020919031" seo="true" mt="1490884181048" redirect="true"/>
+  <file name="index.html" crc="409780826" seo="true" mt="1490885598030" redirect="true"/>
 </manifest>
