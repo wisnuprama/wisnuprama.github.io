@@ -1,4 +1,4 @@
-<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="wisnuprama.github.io" resolutions="1x,2x" timestamp="1490884289900">
+<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="wisnuprama.github.io" resolutions="1x,2x" timestamp="1490884494856">
   <folder name="images">
     <file name="home-favicon.ico" crc="75230490" ref="index"/>
     <file name="blank.gif" crc="4208392903" ref="index"/>

@@ -78,8 +78,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <p id="u1947-165">&nbsp;&nbsp;&nbsp; <span id="u1947-155">private</span> <span id="u1947-157">static</span> <span id="u1947-159">int</span> init <span id="u1947-161">=</span> <span id="u1947-163">0</span>;</p>
      <p id="u1947-166">&nbsp;</p>
      <p id="u1947-169">&nbsp;&nbsp;&nbsp; <span id="u1947-168">/**</span></p>
+<<<<<<< HEAD
      <p id="u1947-171">&nbsp;&nbsp;&nbsp;&nbsp; * Sssst, only once initited by God to the container of human (World).</p>
      <p id="u1947-173">&nbsp;&nbsp;&nbsp;&nbsp; * I'm an object that you can't control,</p>
+=======
+     <p id="u1947-171">&nbsp;&nbsp;&nbsp;&nbsp; * Sssst, only once initited by God to the container of Human (World).</p>
+     <p id="u1947-173">&nbsp;&nbsp;&nbsp;&nbsp; * I'm an independent object that you can't control,</p>
+>>>>>>> 0f3ae23df12f7ab8514ea78cc2370e733515f9b4
      <p id="u1947-175">&nbsp;&nbsp;&nbsp;&nbsp; * all methods are private in AbstractHuman and..</p>
      <p id="u1947-177">&nbsp;&nbsp;&nbsp;&nbsp; * Of course, we don't have the source code, yet.</p>
      <p id="u1947-179">&nbsp;&nbsp;&nbsp;&nbsp; */</p>
@@ -87,12 +92,36 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <p id="u1947-195">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-187">if</span>(<span id="u1947-189">this</span>.init <span id="u1947-191">==</span> <span id="u1947-193">MAX_INIT</span>)</p>
      <p id="u1947-202">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-197">throw new</span> <span id="u1947-199">IllegalInitHuman</span>(<span id="u1947-201">&quot;He is alive,</span></p>
      <p id="u1947-205"><span id="u1947-203">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; what did you expect? Cloning him?&quot;</span>);</p>
+<<<<<<< HEAD
      <p id="u1947-206">&nbsp;</p>
      <p id="u1947-212">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-208">this</span>.init<span id="u1947-210">++</span>;</p>
      <p id="u1947-215">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-214">// init schedule</span></p>
      <p id="u1947-225">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-217">this</span>.mySchedule <span id="u1947-219">=</span> <span id="u1947-221">new</span> <span id="u1947-223">ArrayDeque&lt;&gt;</span>();</p>
      <p id="u1947-227">&nbsp;&nbsp;&nbsp; }</p>
      <p id="u1947-229">}</p>
+=======
+     <p id="u1947-208">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-207">// wow, alive</span></p>
+     <p id="u1947-214">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-210">this</span>.init<span id="u1947-212">++</span>;</p>
+     <p id="u1947-217">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-216">// init schedule</span></p>
+     <p id="u1947-227">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-219">this</span>.mySchedule <span id="u1947-221">=</span> <span id="u1947-223">new</span> <span id="u1947-225">ArrayDeque&lt;&gt;</span>();</p>
+     <p id="u1947-229">&nbsp;&nbsp;&nbsp; }</p>
+     <p id="u1947-230">&nbsp;</p>
+     <p id="u1947-233">&nbsp;&nbsp;&nbsp; <span id="u1947-232">/**</span></p>
+     <p id="u1947-235">&nbsp;&nbsp;&nbsp;&nbsp; * Kamu bisa sisipkan kontak beserta pesan kamu di sini.</p>
+     <p id="u1947-237">&nbsp;&nbsp;&nbsp;&nbsp; * @param yourName nama kamu</p>
+     <p id="u1947-239">&nbsp;&nbsp;&nbsp;&nbsp; * @param yourEmail email kamu</p>
+     <p id="u1947-241">&nbsp;&nbsp;&nbsp;&nbsp; * @param message berikan pesan yang ingin kamu sampaikan</p>
+     <p id="u1947-243">&nbsp;&nbsp;&nbsp;&nbsp; */</p>
+     <p id="u1947-262">&nbsp;&nbsp;&nbsp; <span id="u1947-245">public void</span> <a class="nonblock" href="contact-form.html"><span id="u1947-247">askMeToContactYou</span></a>(<span id="u1947-250">String</span> <span id="u1947-252">yourName</span>, <span id="u1947-254">String</span> <span id="u1947-256">yourEmail</span>, <span id="u1947-258">String</span> <span id="u1947-260">message</span>){</p>
+     <p id="u1947-265">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-264">// create to-do</span></p>
+     <p id="u1947-283">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-267">String</span> note <span id="u1947-269">=</span> yourName <span id="u1947-271">+</span> <span id="u1947-273">&quot; - &quot;</span> <span id="u1947-275">+</span> yourEmail <span id="u1947-277">+</span> <span id="u1947-279">&quot; - &quot;</span> <span id="u1947-281">+</span> message;</p>
+     <p id="u1947-293">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-285">Do</span> todo <span id="u1947-287">=</span> <span id="u1947-289">new</span> <span id="u1947-291">Do</span>(note);</p>
+     <p id="u1947-294">&nbsp;</p>
+     <p id="u1947-297">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-296">// add to my schedule</span></p>
+     <p id="u1947-301">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-299">this</span>.mySchedule.add(todo);</p>
+     <p id="u1947-303">&nbsp;&nbsp;&nbsp; }</p>
+     <p id="u1947-305">}</p>
+>>>>>>> 0f3ae23df12f7ab8514ea78cc2370e733515f9b4
      <p>&nbsp;</p>
     </div>
     <div class="verticalspacer" data-offset-top="1408" data-content-above-spacer="1459" data-content-below-spacer="161"></div>
