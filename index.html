@@ -14,14 +14,15 @@ document.documentElement.className = document.documentElement.className.replace(
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
-  <title>wisnuprama</title>
+  <link rel="shortcut icon" href="images/home-favicon.ico?crc=75230490"/>
+  <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=443350757"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=370512621" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4099314775" id="pagesheet"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?crc=3824530138"/>
-  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=512759150" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_index.css?crc=166971502" id="nomq_pagesheet"/>
   <![endif]-->
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -32,9 +33,9 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    </head>
  <body>
 
-  <div class="breakpoint active" id="bp_infinity" data-min-width="961"><!-- responsive breakpoint node -->
-   <div class="clearfix" id="page"><!-- group -->
-    <div class="clearfix grpelem shared_content" id="u1947-308" data-content-guid="u1947-308_content"><!-- content -->
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1001"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox" id="page"><!-- group -->
+    <div class="clearfix grpelem" id="u1947-232"><!-- content -->
      <p id="u1947-5"><span id="u1947">public class</span> WisnuPrama</p>
      <p id="u1947-9"><span id="u1947-6">extends</span> <span id="u1947-8">AbstractHuman</span></p>
      <p id="u1947-11">{</p>
@@ -77,48 +78,105 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <p id="u1947-165">&nbsp;&nbsp;&nbsp; <span id="u1947-155">private</span> <span id="u1947-157">static</span> <span id="u1947-159">int</span> init <span id="u1947-161">=</span> <span id="u1947-163">0</span>;</p>
      <p id="u1947-166">&nbsp;</p>
      <p id="u1947-169">&nbsp;&nbsp;&nbsp; <span id="u1947-168">/**</span></p>
-     <p id="u1947-171">&nbsp;&nbsp;&nbsp;&nbsp; * Sssst, only once initited by God to container of Human (World).</p>
-     <p id="u1947-173">&nbsp;&nbsp;&nbsp;&nbsp; * I'm an independent object that you can't control,</p>
-     <p id="u1947-175">&nbsp;&nbsp;&nbsp;&nbsp; * all method are private in AbstractHuman and..</p>
+     <p id="u1947-171">&nbsp;&nbsp;&nbsp;&nbsp; * Sssst, only once initited by God to the container of human (World).</p>
+     <p id="u1947-173">&nbsp;&nbsp;&nbsp;&nbsp; * I'm an object that you can't control,</p>
+     <p id="u1947-175">&nbsp;&nbsp;&nbsp;&nbsp; * all methods are private in AbstractHuman and..</p>
      <p id="u1947-177">&nbsp;&nbsp;&nbsp;&nbsp; * Of course, we don't have the source code, yet.</p>
      <p id="u1947-179">&nbsp;&nbsp;&nbsp;&nbsp; */</p>
      <p id="u1947-185">&nbsp;&nbsp;&nbsp; <span id="u1947-181">public</span> <span id="u1947-183">WisnuPrama</span>(){</p>
      <p id="u1947-195">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-187">if</span>(<span id="u1947-189">this</span>.init <span id="u1947-191">==</span> <span id="u1947-193">MAX_INIT</span>)</p>
      <p id="u1947-202">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-197">throw new</span> <span id="u1947-199">IllegalInitHuman</span>(<span id="u1947-201">&quot;He is alive,</span></p>
-     <p id="u1947-205"><span id="u1947-203">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; what did you expect? Cloned him?&quot;</span>);</p>
-     <p id="u1947-208">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-207">// wow, alive</span></p>
-     <p id="u1947-214">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-210">this</span>.init<span id="u1947-212">++</span>;</p>
-     <p id="u1947-217">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-216">// init schedule</span></p>
-     <p id="u1947-227">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-219">this</span>.mySchedule <span id="u1947-221">=</span> <span id="u1947-223">new</span> <span id="u1947-225">ArrayDeque&lt;&gt;</span>();</p>
-     <p id="u1947-229">&nbsp;&nbsp;&nbsp; }</p>
-     <p id="u1947-230">&nbsp;</p>
-     <p id="u1947-233">&nbsp;&nbsp;&nbsp; <span id="u1947-232">/**</span></p>
-     <p id="u1947-235">&nbsp;&nbsp;&nbsp;&nbsp; * Kamu bisa sisipkan kontak beserta pesan kamu di sini.</p>
-     <p id="u1947-237">&nbsp;&nbsp;&nbsp;&nbsp; * @param yourName nama kamu</p>
-     <p id="u1947-239">&nbsp;&nbsp;&nbsp;&nbsp; * @param yourEmail email kamu</p>
-     <p id="u1947-241">&nbsp;&nbsp;&nbsp;&nbsp; * @param message berikan pesan yang ingin kamu sampaikan</p>
-     <p id="u1947-243">&nbsp;&nbsp;&nbsp;&nbsp; */</p>
-     <p id="u1947-262">&nbsp;&nbsp;&nbsp; <span id="u1947-245">public void</span> <a class="nonblock" href="contact-form.html"><span id="u1947-247">askMeToContactYou</span></a>(<span id="u1947-250">String</span> <span id="u1947-252">yourName</span>, <span id="u1947-254">String</span> <span id="u1947-256">yourEmail</span>, <span id="u1947-258">String</span> <span id="u1947-260">message</span>){</p>
-     <p id="u1947-265">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-264">// create to-do</span></p>
-     <p id="u1947-283">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-267">String</span> note <span id="u1947-269">=</span> yourName <span id="u1947-271">+</span> <span id="u1947-273">&quot; - &quot;</span> <span id="u1947-275">+</span> yourEmail <span id="u1947-277">+</span> <span id="u1947-279">&quot; - &quot;</span> <span id="u1947-281">+</span> message;</p>
-     <p id="u1947-293">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-285">Do</span> todo <span id="u1947-287">=</span> <span id="u1947-289">new</span> <span id="u1947-291">Do</span>(note);</p>
-     <p id="u1947-294">&nbsp;</p>
-     <p id="u1947-297">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-296">// add to my schedule</span></p>
-     <p id="u1947-301">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-299">this</span>.mySchedule.add(todo);</p>
-     <p id="u1947-303">&nbsp;&nbsp;&nbsp; }</p>
-     <p id="u1947-305">}</p>
+     <p id="u1947-205"><span id="u1947-203">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; what did you expect? Cloning him?&quot;</span>);</p>
+     <p id="u1947-206">&nbsp;</p>
+     <p id="u1947-212">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-208">this</span>.init<span id="u1947-210">++</span>;</p>
+     <p id="u1947-215">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-214">// init schedule</span></p>
+     <p id="u1947-225">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u1947-217">this</span>.mySchedule <span id="u1947-219">=</span> <span id="u1947-221">new</span> <span id="u1947-223">ArrayDeque&lt;&gt;</span>();</p>
+     <p id="u1947-227">&nbsp;&nbsp;&nbsp; }</p>
+     <p id="u1947-229">}</p>
      <p>&nbsp;</p>
     </div>
-    <div class="verticalspacer" data-offset-top="1789" data-content-above-spacer="1840" data-content-below-spacer="161"></div>
+    <div class="verticalspacer" data-offset-top="1408" data-content-above-spacer="1459" data-content-below-spacer="161"></div>
     <div class="clearfix grpelem shared_content" id="u2002-4" data-content-guid="u2002-4_content"><!-- content -->
      <p>Wisnu Pramadhitya Ramadhan (2017)</p>
     </div>
    </div>
   </div>
-  <div class="breakpoint" id="bp_960" data-max-width="960"><!-- responsive breakpoint node -->
+  <div class="breakpoint" id="bp_1000" data-max-width="1000"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
-    <span class="clearfix grpelem placeholder" data-placeholder-for="u1947-308_content"><!-- placeholder node --></span>
-    <div class="verticalspacer" data-offset-top="1789" data-content-above-spacer="2594" data-content-below-spacer="62"></div>
+    <div class="clearfix grpelem" id="u3116-248"><!-- content -->
+     <p id="u3116-5"><span id="u3116">public class</span> WisnuPrama</p>
+     <p id="u3116-9"><span id="u3116-6">extends</span> <span id="u3116-8">AbstractHuman</span></p>
+     <p id="u3116-11">{</p>
+     <p id="u3116-14">&nbsp;&nbsp;&nbsp; <span id="u3116-13">// PERSONAL INFORMATION</span></p>
+     <p id="u3116-22">&nbsp;&nbsp;&nbsp; <span id="u3116-16">public static final</span> <span id="u3116-18">String</span> fullName <span id="u3116-20">=</span></p>
+     <p id="u3116-25"><span id="u3116-23">&nbsp;&nbsp;&nbsp; &quot;Wisnu Pramadhitya Ramadhan&quot;</span>;</p>
+     <p id="u3116-26">&nbsp;</p>
+     <p id="u3116-34">&nbsp;&nbsp;&nbsp; <span id="u3116-28">public static final</span> <span id="u3116-30">String</span> nickname <span id="u3116-32">=</span></p>
+     <p id="u3116-37"><span id="u3116-35">&nbsp;&nbsp;&nbsp; &quot;Adhitya&quot;</span>;</p>
+     <p id="u3116-38">&nbsp;</p>
+     <p id="u3116-45"><span id="u3116-39">&nbsp;&nbsp;&nbsp; public static final</span> <span id="u3116-41">String</span> email <span id="u3116-43">=</span></p>
+     <p id="u3116-48"><span id="u3116-46">&nbsp;&nbsp;&nbsp; &quot;wisnuprama014@gmail.com&quot;</span>;</p>
+     <p id="u3116-49">&nbsp;</p>
+     <p id="u3116-52">&nbsp;&nbsp;&nbsp; <span id="u3116-51">// SOCIAL SITE</span></p>
+     <p id="u3116-60">&nbsp;&nbsp;&nbsp; <span id="u3116-54">public static final</span> <span id="u3116-56">String</span> linkedin <span id="u3116-58">=</span></p>
+     <p id="u3116-66"><span id="u3116-61">&nbsp;&nbsp;&nbsp; &quot;</span><a class="nonblock" href="https://www.linkedin.com/in/wisnuprama/"><span id="u3116-62">https://www.linkedin.com/in/wisnuprama/</span></a><span id="u3116-64">&quot;</span>;</p>
+     <p id="u3116-67">&nbsp;</p>
+     <p id="u3116-75">&nbsp;&nbsp;&nbsp; <span id="u3116-69">public static final</span> <span id="u3116-71">String</span> blog <span id="u3116-73">=</span></p>
+     <p id="u3116-81"><span id="u3116-76">&nbsp;&nbsp;&nbsp; &quot;</span><a class="nonblock" href="https://adhityanotes.wordpress.com/"><span id="u3116-77">https://adhityanotes.wordpress.com/</span></a><span id="u3116-79">&quot;</span>;</p>
+     <p id="u3116-82">&nbsp;</p>
+     <p id="u3116-90">&nbsp;&nbsp;&nbsp; <span id="u3116-84">public static final</span> <span id="u3116-86">String</span> github <span id="u3116-88">=</span></p>
+     <p id="u3116-96"><span id="u3116-91">&nbsp;&nbsp;&nbsp; &quot;</span><a class="nonblock" href="https://github.com/wisnuprama"><span id="u3116-92">https://github.com/wisnuprama</span></a><span id="u3116-94">&quot;</span>;</p>
+     <p id="u3116-97">&nbsp;</p>
+     <p id="u3116-100">&nbsp;&nbsp;&nbsp; <span id="u3116-99">// ABOUT ME</span></p>
+     <p id="u3116-102">&nbsp;&nbsp;&nbsp; /**</p>
+     <p id="u3116-104">&nbsp;&nbsp;&nbsp;&nbsp; * Halo untuk kamu yang lagi baca.</p>
+     <p id="u3116-106">&nbsp;&nbsp;&nbsp;&nbsp; * Panggil saja saya Wisnu atau jika pun</p>
+     <p id="u3116-108">&nbsp;&nbsp;&nbsp;&nbsp; * kamu punya sebutan lain juga boleh.</p>
+     <p id="u3116-110">&nbsp;&nbsp;&nbsp;&nbsp; * Hari ini saya sedang kuliah di Fakultas Ilmu Kommputer,</p>
+     <p id="u3116-112">&nbsp;&nbsp;&nbsp;&nbsp; * Universitas Indonesia. Hobi saya programming,</p>
+     <p id="u3116-114">&nbsp;&nbsp;&nbsp;&nbsp; * tapi belum jago, nanti harus jago deh.</p>
+     <p id="u3116-116">&nbsp;&nbsp;&nbsp;&nbsp; * Saya juga suka data science dan machine learning,</p>
+     <p id="u3116-118">&nbsp;&nbsp;&nbsp;&nbsp; * tapi belum jago, nanti kapan-kapan harus jago deh.</p>
+     <p id="u3116-120">&nbsp;&nbsp;&nbsp;&nbsp; *</p>
+     <p id="u3116-122">&nbsp;&nbsp;&nbsp;&nbsp; * Saya juga suka puisi. Menurut saya source code</p>
+     <p id="u3116-124">&nbsp;&nbsp;&nbsp;&nbsp; * itu layaknya puisi. Harus indah, dapat dimengerti,</p>
+     <p id="u3116-126">&nbsp;&nbsp;&nbsp;&nbsp; * dan dapat dibaca, tentu juga ketika</p>
+     <p id="u3116-128">&nbsp;&nbsp;&nbsp;&nbsp; * dicompile harus bisa bekerja dan mengubah</p>
+     <p id="u3116-130">&nbsp;&nbsp;&nbsp;&nbsp; * keadaan si pengguna.</p>
+     <p id="u3116-132">&nbsp;&nbsp;&nbsp;&nbsp; * Seperti puisi, demikian ia dapat mengubah</p>
+     <p id="u3116-134">&nbsp;&nbsp;&nbsp;&nbsp; * cara pandang seseorang yang membacanya.</p>
+     <p id="u3116-136">&nbsp;&nbsp;&nbsp;&nbsp; *</p>
+     <p id="u3116-138">&nbsp;&nbsp;&nbsp;&nbsp; * Terima kasih sudah membaca tulisan saya.</p>
+     <p id="u3116-140">&nbsp;&nbsp;&nbsp;&nbsp; */</p>
+     <p id="u3116-141">&nbsp;</p>
+     <p id="u3116-143">&nbsp;&nbsp;&nbsp; // CONST</p>
+     <p id="u3116-155">&nbsp;&nbsp;&nbsp; <span id="u3116-145">private static final</span> <span id="u3116-147">int</span> <span id="u3116-149">MAX_INIT</span> <span id="u3116-151">=</span> <span id="u3116-153">1</span>;</p>
+     <p id="u3116-156">&nbsp;</p>
+     <p id="u3116-159">&nbsp;&nbsp;&nbsp; <span id="u3116-158">// to-do's queue</span></p>
+     <p id="u3116-165">&nbsp;&nbsp;&nbsp; <span id="u3116-161">private</span> <span id="u3116-163">Deque&lt;Do&gt;</span> mySchedule;</p>
+     <p id="u3116-166">&nbsp;</p>
+     <p id="u3116-178">&nbsp;&nbsp;&nbsp; <span id="u3116-168">private</span> <span id="u3116-170">static</span> <span id="u3116-172">int</span> init <span id="u3116-174">=</span> <span id="u3116-176">0</span>;</p>
+     <p id="u3116-179">&nbsp;</p>
+     <p id="u3116-182">&nbsp;&nbsp;&nbsp; <span id="u3116-181">/**</span></p>
+     <p id="u3116-184">&nbsp;&nbsp;&nbsp;&nbsp; * Sssst, only once initited by God to the container</p>
+     <p id="u3116-186">* of human (World).</p>
+     <p id="u3116-188">&nbsp;&nbsp;&nbsp;&nbsp; * I'm an object that you can't control,</p>
+     <p id="u3116-190">&nbsp;&nbsp;&nbsp;&nbsp; * all methods are private in AbstractHuman and..</p>
+     <p id="u3116-192">&nbsp;&nbsp;&nbsp;&nbsp; * Of course, we don't have the source code, yet.</p>
+     <p id="u3116-194">&nbsp;&nbsp;&nbsp;&nbsp; */</p>
+     <p id="u3116-200">&nbsp;&nbsp;&nbsp; <span id="u3116-196">public</span> <span id="u3116-198">WisnuPrama</span>(){</p>
+     <p id="u3116-210">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u3116-202">if</span>(<span id="u3116-204">this</span>.init <span id="u3116-206">==</span> <span id="u3116-208">MAX_INIT</span>)</p>
+     <p id="u3116-217">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u3116-212">throw new</span> <span id="u3116-214">IllegalInitHuman</span>(<span id="u3116-216">&quot;He is alive,</span></p>
+     <p id="u3116-219"><span id="u3116-218">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; what did you expect?</span></p>
+     <p id="u3116-222"><span id="u3116-220">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloning him?&quot;</span>);</p>
+     <p id="u3116-223">&nbsp;</p>
+     <p id="u3116-229">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u3116-225">this</span>.init<span id="u3116-227">++</span>;</p>
+     <p id="u3116-232">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u3116-231">// init schedule</span></p>
+     <p id="u3116-242">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u3116-234">this</span>.mySchedule <span id="u3116-236">=</span> <span id="u3116-238">new</span> <span id="u3116-240">ArrayDeque&lt;&gt;</span>();</p>
+     <p id="u3116-244">&nbsp;&nbsp;&nbsp; }</p>
+     <p id="u3116-246">}</p>
+    </div>
+    <div class="verticalspacer" data-offset-top="974" data-content-above-spacer="1779" data-content-below-spacer="61"></div>
     <span class="clearfix grpelem placeholder" data-placeholder-for="u2002-4_content"><!-- placeholder node --></span>
    </div>
   </div>
