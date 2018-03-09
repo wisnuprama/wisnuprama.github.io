@@ -2,7 +2,7 @@
   "name": "wisnuprama",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://wisnuprama.github.io/wisnuprama.github.io",
+  "homepage": "http://wisnuprama.github.io/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",

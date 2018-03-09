@@ -1,3 +1,4 @@
 # ignore project
 /project
+/build
 yarn-error.log
